@@ -62,11 +62,11 @@ void loop() {
 
   // Push the button to acquire samples
   while (digitalRead(BUTTON)) yield();
-  delay(30); // debounce
-  // Acquire 10 snore samples
-  acquisition(1);
-  delay(3000);
-  // Acquire 10 silence samples
-  acquisition(0);
+    delay(30); // debounce
+    // Acquire 10 snore samples
+    acquisition(1);
+    delay(3000);
+    // Acquire 10 silence samples
+    acquisition(0);
   ++N;
 }
